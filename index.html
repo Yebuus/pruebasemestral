@@ -22,7 +22,7 @@
     <div class="container">
     <form id="mainform">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required minlength="10" maxlength="30" oninput="this.value = this.value.replace(/[0-9]/g, '')">
+        <input type="text" id="nombre" name="nombre" maxlength="30" oninput="this.value = this.value.replace(/[0-9]/g, '')">
         <span class="error" id="errorNombre"></span>
         <br><br>
 
