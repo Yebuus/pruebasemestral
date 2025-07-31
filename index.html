@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a un archivo CSS -->
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-content">
+            <h2 class="nombre">🎸Rock Fest 2025</h2>
+            <div class="nav-links">
+                <h2>Inicio</h2>
+                <h2>Entradas</h2>
+                <h2>Contacto</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    <form id="mainform">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="10" maxlength="30" oninput="this.value = this.value.replace(/[0-9]/g, '')">
+        <span class="error" id="errorNombre"></span>
+        <br><br>
+
+        <label for="cantidad">Cantidad de Entradas:</label>
+        <input type="number" id="quanity" min="1" step="10" value="1">
+        <br><br>
+
+        <label for="tipo">Tipo de Entrada:</label>
+        <select id="tipo" name="tipo">
+            <option value="general">General - 1000$</option>
+            <option value="vip">VIP - 5000$</option>
+            <option value="vippremium">Platino - 10000$</option>
+        </select>
+        <br><br>
+
+        <label for="descuento">Código de descuento:</label>
+        <input type="text" id="descuento" name="descuento">
+        <br><br>
+        
+        <button type="button" id="enviar">Enviar</button>
+        <p id="resultado"></p>
+    </div>
+    </form>
+
+    <script src="validacionprueba.js"></script>
+    </footer>
+</body>
+</html>
