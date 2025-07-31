@@ -89,6 +89,7 @@ footer {
 }
 
 .container {
+    color: white;
     background-color: black;
     padding: 20px;
     border-radius: 10px;
@@ -97,7 +98,6 @@ footer {
 }
 
 input, select, button {
-    color: white;
     width: 100%; 
     margin-bottom: 15px;
     padding: 10px;
